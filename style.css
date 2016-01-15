@@ -1,3 +1,8 @@
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+
+
 #searchBar {
   margin: 15px 10px;
 }
@@ -6,3 +11,4 @@
   max-height: 400px;
   overflow: auto;
 }
+
