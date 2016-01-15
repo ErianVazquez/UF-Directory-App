@@ -34,9 +34,19 @@
                       * include a way to remove individual listings
 
                 -->
-                <tr ng-repeat="listing in listings" ng-click="deleteListing($index)">
-                  <td> {{listing.code}}</td>
-                  <td> {{listing.name}}</td>
+                <tr ng-repeat="listing in listings" >
+                  <td> {{listing.code}} </td>
+                  <td> {{listing.name}} </td>
+                  <td>
+                    <button ng-click = "deleteListing($index)" >
+                      <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </button>
+                  </td>
+                  <td>
+                    <button ng-click = "showDetails($index)" >
+                      <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                    </button>
+                  </td>
                 </tr>
 
             </table>
@@ -48,11 +58,14 @@
             -->
 
             <h3>Add Location</h3>
-            <input type="text" ng-model="newCode">
-            <input type="text" ng-model="newName">
+            <h5>Required</h5>
+            <input type="text" placeholder="Building Code" ng-model="newCode">
+            <input type="text" placeholder="Building Name" ng-model="newName">
+            <h5>Optional</h5>
+            <input type="text" placeholder="Building Latitude" ng-model="newLatitude">
+            <input type="text" placeholder="Building Longitude" ng-model="newLongitude">
+            <input type="text" placeholder="Building Address" ng-model="newAddress">
             <button ng-click="addListing()">Add item</button>
-            <p>{{newCode}}</p>
-            <p>{{newName}}</p>
 
         </div>
         <div class="col-md-6">
@@ -64,6 +77,13 @@
                    * consider how to use ng-click within the the table to implement this feature
 
              -->
+
+             <h5>{{displayCode}}</h5>
+             <h5>{{displayName}}</h5>
+             <h5>{{displayLatitude}}</h5>
+             <h5>{{displayLongitude}}</h5>
+             <h5>{{displayAddress}}</h5>
+
           </div>
         </div>
       </div>
