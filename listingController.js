@@ -64,5 +64,19 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       }
 
     };
+
+
+    $scope.showSearchResult = function() {
+     // $scope.displayLongitude =  'test1';
+      for(j in $scope.listings) {
+            if($scope.listings[j].code === $scope.searchString || $scope.listings[j].name === $scope.searchString){
+              //var theListing = $scope.listings[j];
+              $scope.showDetails(j);
+            }
+
+      }
+
+      //$scope.displayLongitude = 'Longitude: ' + $scope.searchString;
+    };
   }
 ]);

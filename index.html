@@ -17,8 +17,8 @@
                 Implement a way to filter through listings using the search bar
 
               -->
-            <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span></span>
-            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search" ng-click = "showSearchResult()"></span></span>
+            <input type="text" class="form-control" placeholder="Search" ng-model="searchString">
           </div>
           <div class="tableWrapper">
             <table class="table table-striped table-hover">
