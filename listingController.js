@@ -72,7 +72,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       for(listingNum in $scope.listings) {
             if($scope.listings[listingNum].code === $scope.searchString || $scope.listings[listingNum].name === $scope.searchString){
               //var theListing = $scope.listings[j];
-              $scope.showDetails(listingNum);
+              $scope.showDetails($scope.listings[listingNum]);
               break;
             }
 
