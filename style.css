@@ -10,3 +10,9 @@ td {
   overflow: auto;
 }
 
+table tr:nth-child(odd) td{
+  background-color: #82CFFD;
+}
+table tr:nth-child(even) td{
+  background-color: #9FB6CD;
+}

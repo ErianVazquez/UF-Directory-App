@@ -63,7 +63,6 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       } else {
         $scope.displayAddress = 'Address: ' + $scope.listings[index].address;
       }
-
     };
 
 
