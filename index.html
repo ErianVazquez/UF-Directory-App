@@ -34,7 +34,7 @@
                       * include a way to remove individual listings
 
                 -->
-                <tr ng-repeat="listing in listings" >
+                <tr ng-repeat="listing in listings | filter:searchString as results">
                   <td> {{listing.code}} </td>
                   <td> {{listing.name}} </td>
                   <td>
