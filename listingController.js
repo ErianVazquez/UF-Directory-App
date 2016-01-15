@@ -42,12 +42,13 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       }
     };
 
-    $scope.deleteListing = function(index) {
-      console.dir($scope.listings[index]);
+    $scope.deleteListing = function(listing) {
+      var index = $scope.listings.indexOf(listing);
       $scope.listings.splice(index, 1);
     };
 
-    $scope.showDetails = function(index) {
+    $scope.showDetails = function(listing) {
+      var index = $scope.listings.indexOf(listing);
       $scope.displayCode = 'Code: ' + $scope.listings[index].code;
       $scope.displayName = 'Name: ' + $scope.listings[index].name;
       if(!$scope.listings[index].hasOwnProperty('coordinates')){

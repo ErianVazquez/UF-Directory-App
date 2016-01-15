@@ -38,12 +38,12 @@
                   <td> {{listing.code}} </td>
                   <td> {{listing.name}} </td>
                   <td>
-                    <button ng-click = "deleteListing($index)" >
+                    <button ng-click = "deleteListing(listing)" >
                       <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                     </button>
                   </td>
                   <td>
-                    <button ng-click = "showDetails($index)" >
+                    <button ng-click = "showDetails(listing)" >
                       <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                     </button>
                   </td>
