@@ -1,3 +1,5 @@
+NOTE: There are two ways to search. Typing things in will apply a filter in HTML, while entering a building code or name and clicking the magnifying glass will result in the details for the matching string being brought up right away.
+
 # Introduction to Front-end development with Angular.js
 We will continue to build upon our directory application by creating a front-end interface with Angular.js to display listings, as well as the ability to add new listings and delete old ones.
 
