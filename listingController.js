@@ -10,22 +10,19 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
      */
 
      var defineNewListing = function (firstString, secondString) {
-       var string = '{"code": "'+firstString+'","name": "'+firstString+'"}';
-       return string;
+       var newListing =
+                     {
+                         "code": firstString,
+                         "name": secondString
+                     };
+       return newListing;
      }
 
     $scope.addListing = function() {
 
-      var input = defineNewListing($scope.newCode, $scope.newName);
+      var item = defineNewListing($scope.newCode, $scope.newName)
 
-      console.log(input);
-
-      $scope.listings.push(input);
-
-      // listings.entries.push
-      //
-      // $scope.listings.push($scope.newCode);
-      // $scope.newItem = '';
+      $scope.listings.push(item);
     };
     $scope.deleteListing = function(index) {
       console.dir($scope.listings[index]);
