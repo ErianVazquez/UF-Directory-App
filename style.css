@@ -21,4 +21,20 @@ body {
     background-color: #ccffcc;
 }
 
+input[id="inputID"] {
+    height:30px;
+    width: 200px;
+    font-size:12pt;
+    margin: 5px 10px;
+}
 
+button[id="trashID"] {
+    height:30px;
+    width: 30px;
+    margin: 5px 10px;
+}
+button[id="infoID"] {
+    height:30px;
+    width: 30px;
+    margin: 5px 10px;
+}

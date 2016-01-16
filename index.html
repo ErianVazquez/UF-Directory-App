@@ -38,12 +38,12 @@
                   <td> {{listing.code}} </td>
                   <td> {{listing.name}} </td>
                   <td>
-                    <button ng-click = "deleteListing(listing)" >
+                    <button ng-click = "deleteListing(listing)" id="trashID">
                       <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                     </button>
                   </td>
                   <td>
-                    <button ng-click = "showDetails(listing)" >
+                    <button ng-click = "showDetails(listing)" id="infoID">
                       <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                     </button>
                   </td>
@@ -59,12 +59,12 @@
 
             <h3>Add Location</h3>
             <h5>Required</h5>
-            <input type="text" placeholder="Building Code" ng-model="newCode">
-            <input type="text" placeholder="Building Name" ng-model="newName">
+            <input type="text" placeholder="Building Code" ng-model="newCode" id="inputID"> <br>
+            <input type="text" placeholder="Building Name" ng-model="newName" id="inputID"> <br>
             <h5>Optional</h5>
-            <input type="text" placeholder="Building Latitude" ng-model="newLatitude">
-            <input type="text" placeholder="Building Longitude" ng-model="newLongitude">
-            <input type="text" placeholder="Building Address" ng-model="newAddress">
+            <input type="text" placeholder="Building Latitude" ng-model="newLatitude" id="inputID"> <br>
+            <input type="text" placeholder="Building Longitude" ng-model="newLongitude" id="inputID"> <br>
+            <input type="text" placeholder="Building Address" ng-model="newAddress" id="inputID"> <br>
             <button ng-click="addListing()">Add item</button>
 
         </div>
