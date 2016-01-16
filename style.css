@@ -1,12 +1,13 @@
 td {
     font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
 }
 #searchBar {
   margin: 15px 100px;
 }
 
 .tableWrapper {
-  max-height: 400px;
+  max-height: 500px;
   overflow: auto;
 }
 
@@ -14,11 +15,16 @@ table tr:nth-child(odd) td{
   background-color: #82CFFD;
 }
 table tr:nth-child(even) td{
-  background-color: #9FB6CD;
+  background-color: #D8E1EB;
+}
+
+table th{
+  background-color: #a8bdd2;
+  font-size:14pt;
 }
 
 body {
-    background-color: #ccffcc;
+    background-color: #003f7e;
 }
 
 input[id="inputID"] {
@@ -29,12 +35,31 @@ input[id="inputID"] {
 }
 
 button[id="trashID"] {
-    height:30px;
-    width: 30px;
-    margin: 5px 10px;
+    height:33px;
+    width: 33px;
+    padding-top: 3px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    padding-left: 6px;
 }
 button[id="infoID"] {
-    height:30px;
-    width: 30px;
-    margin: 5px 10px;
+    height:33px;
+    width: 33px;
+    padding-top: 3px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.fieldHeading {
+  color: white;
 }

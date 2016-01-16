@@ -26,6 +26,7 @@
                 <th>Code</th>
                 <th>Building Name</th>
                 <th></th>
+                <th></th>
               </tr>
               <!--
 
@@ -38,12 +39,12 @@
                   <td> {{listing.code}} </td>
                   <td> {{listing.name}} </td>
                   <td>
-                    <button ng-click = "deleteListing(listing)" id="trashID">
+                    <button class = "btn btn-danger" ng-click = "deleteListing(listing)" id="trashID">
                       <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                     </button>
                   </td>
                   <td>
-                    <button ng-click = "showDetails(listing)" id="infoID">
+                    <button class = "btn btn-primary" ng-click = "showDetails(listing)" id="infoID">
                       <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                     </button>
                   </td>
@@ -51,21 +52,7 @@
 
             </table>
           </div>
-          <!--
 
-              Write an HTML form that adds new listings to the directory
-
-            -->
-
-            <h3>Add Location</h3>
-            <h5>Required</h5>
-            <input type="text" placeholder="Building Code" ng-model="newCode" id="inputID"> <br>
-            <input type="text" placeholder="Building Name" ng-model="newName" id="inputID"> <br>
-            <h5>Optional</h5>
-            <input type="text" placeholder="Building Latitude" ng-model="newLatitude" id="inputID"> <br>
-            <input type="text" placeholder="Building Longitude" ng-model="newLongitude" id="inputID"> <br>
-            <input type="text" placeholder="Building Address" ng-model="newAddress" id="inputID"> <br>
-            <button ng-click="addListing()">Add item</button>
 
         </div>
         <div class="col-md-6">
@@ -85,7 +72,34 @@
              <h5>{{displayAddress}}</h5>
 
           </div>
-        </div>
+
+          <!--
+
+              Write an HTML form that adds new listings to the directory
+
+            -->
+
+
+            <h3 class = "fieldHeading text-center">Add Location</h3>
+            <div class="row">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-5 text-center">
+                <h5 class = "fieldHeading">Required</h5>
+                <input type="text" placeholder="Building Code" ng-model="newCode" id="inputID"> <br>
+                <input type="text" placeholder="Building Name" ng-model="newName" id="inputID"> <br>
+                <button class="btn btn-success" ng-click="addListing()">Add item</button>
+              </div>
+              <div class="col-md-5 text-center">
+              <h5 class = "fieldHeading">Optional</h5>
+                <input type="text" placeholder="Building Latitude" ng-model="newLatitude" id="inputID"> <br>
+                <input type="text" placeholder="Building Longitude" ng-model="newLongitude" id="inputID"> <br>
+                <input type="text" placeholder="Building Address" ng-model="newAddress" id="inputID"> <br>
+              </div>
+              <div class="col-md-1">
+              </div>
+            </div>
+            </div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
